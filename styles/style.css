@@ -1,3 +1,13 @@
+:root {
+  --clr-primary-100: #23916C;
+  --clr-primary-200: #FFDE23;
+  --clr-primary-300: #2064AE;
+  --clr-accent-100: #FFF099;
+  --clr-accent-200: #A9CBEF;
+  --clr-neutrals-100: #FFF7CC;
+  --clr-neutrals-200: #FFFDF5;
+}
+
 /* Box sizing rules */
 *,
 *::before,
