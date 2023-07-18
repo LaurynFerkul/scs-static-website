@@ -87,6 +87,89 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+/* Utiliy classes for text colors */
+.text-primary-100 {
+  color: var(--clr-primary-100);
+}
+
+.text-primary-200 {
+  color: var(--clr-primary-200);
+}
+
+.text-primary-300 {
+  color: var(--clr-primary-300);
+}
+
+.text-accent-100 {
+  color: var(--clr-accent-100);
+}
+
+.text-accent-200 {
+  color: var(--clr-accent-200);
+}
+
+.text-neutrals-100 {
+  color: var(--clr-neutrals-100);
+}
+
+.text-neutrals-200 {
+  color: var(--clr-neutrals-200);
+}
+
+/* Utiliy classes for background colors */
+.bg-primary-100 {
+  background-color: var(--clr-primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--clr-primary-200);
+}
+
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
+
+.bg-accent-100 {
+  background-color: var(--clr-accent-100);
+}
+
+.bg-accent-200 {
+  background-color: var(--clr-accent-200);
+}
+
+.bg-neutrals-100 {
+  background-color: var(--clr-neutrals-100);
+}
+
+.bg-neutrals-200 {
+  background-color: var(--clr-neutrals-200);
+}
+
+/* Utiliy classes for font-weight */
+.fw-extra-light {
+  font-weight: var(--fw-extra-light);
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
 @media only screen and (min-width: 50rem) {
   :root {
     --fs-400: 1.06rem;

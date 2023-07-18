@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+/* Utiliy classes for font-weight */
+@each $property, $value in $font-weight {
+    .fw-#{$property}{
+        font-weight: var(--fw-#{$property});
+    }
+  }
+
+
+

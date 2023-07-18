@@ -1,0 +1,20 @@
+@use '../abstracts' as *;
+
+/* Utiliy classes for text colors */
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+        .text-#{$color}-#{$shade} {
+            color: var(--clr-#{$color}-#{$shade});
+        }
+    }
+}
+
+/* Utiliy classes for background colors */
+@each $color, $shades in $colors {
+    @each $shade, $value in $shades {
+        .bg-#{$color}-#{$shade} {
+            background-color: var(--clr-#{$color}-#{$shade});
+        }
+
+    }
+}
