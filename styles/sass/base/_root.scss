@@ -12,11 +12,10 @@
         @each $prop, $value in $property {
             --fs-#{$prop}: #{$value};
         }
-    }
+    } 
   }
 
   @each $property, $value in $font-weight {
     --fw-#{$property}: #{$value};
   }
-
 }

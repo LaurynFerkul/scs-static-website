@@ -1,0 +1,28 @@
+@use '../abstracts' as *;
+
+@media only screen and (min-width: 50rem) {
+    :root {
+        @each $screen-size, $property in $type-scale {
+            @if $screen-size == medium {
+    
+                @each $prop, $value in $property {
+                    --fs-#{$prop}: #{$value};
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 65rem) {
+    :root {
+        @each $screen-size, $property in $type-scale {
+            @if $screen-size == large {
+    
+                @each $prop, $value in $property {
+                    --fs-#{$prop}: #{$value};
+                }
+            }
+        }
+    }
+}
+
