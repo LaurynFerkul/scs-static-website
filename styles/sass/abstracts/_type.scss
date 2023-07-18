@@ -1,0 +1,33 @@
+$type-scale: (
+    small: (
+        400: 1rem,
+        500: 1.12rem,
+        600: 1.31rem,
+        700: 1.75rem,
+        800: 2.18rem
+    ),
+    medium: (
+        400: 1.06rem,
+        500: 1.18rem,
+        600: 1.53rem,
+        700: 1.93rem,
+        800: 2.6rem
+    ),
+    large: (
+        400: 1.12rem,
+        500: 1.25rem,
+        600: 1.75rem,
+        700: 2.125rem,
+        800: 3rem
+    )
+);
+
+$font-weight: (
+    extra-light: 200,
+    light: 300, 
+    regular: 400, 
+    medium: 500, 
+    semi-bold: 600, 
+    bold: 700
+);
+

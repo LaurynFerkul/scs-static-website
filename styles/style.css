@@ -6,6 +6,17 @@
   --clr-accent-200: #A9CBEF;
   --clr-neutrals-100: #FFF7CC;
   --clr-neutrals-200: #FFFDF5;
+  --fs-400: 1rem;
+  --fs-500: 1.12rem;
+  --fs-600: 1.31rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2.18rem;
+  --fw-extra-light: 200;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
 }
 
 /* Box sizing rules */

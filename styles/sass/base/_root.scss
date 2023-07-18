@@ -6,4 +6,17 @@
             --clr-#{$color}-#{$shade}: #{$value};
         }
     }
+
+  @each $screen-size, $property in $type-scale {
+    @if $screen-size == small {
+        @each $prop, $value in $property {
+            --fs-#{$prop}: #{$value};
+        }
+    }
+  }
+
+  @each $property, $value in $font-weight {
+    --fw-#{$property}: #{$value};
+  }
+
 }
