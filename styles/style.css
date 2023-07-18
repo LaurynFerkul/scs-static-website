@@ -6,17 +6,21 @@
   --clr-accent-200: #A9CBEF;
   --clr-neutrals-100: #FFF7CC;
   --clr-neutrals-200: #FFFDF5;
-  --fs-400: 1rem;
-  --fs-500: 1.12rem;
-  --fs-600: 1.31rem;
-  --fs-700: 1.75rem;
-  --fs-800: 2.18rem;
   --fw-extra-light: 200;
   --fw-light: 300;
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
+  --fs-400: 1rem;
+  --fs-500: 1.12rem;
+  --fs-600: 1.31rem;
+  --fs-700: 1.75rem;
+  --fs-800: 2.18rem;
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-teritary-heading: var(--fs-600);
 }
 
 /* Box sizing rules */
@@ -168,6 +172,26 @@ svg {
 
 .fw-bold {
   font-weight: var(--fw-bold);
+}
+
+/* Utiliy classes for font-size */
+.fs-body {
+  font-size: var(--fs-body);
+}
+
+.fs-primary-heading {
+  font-size: var(--fs-primary-heading);
+  line-height: 1.2;
+}
+
+.fs-secondary-heading {
+  font-size: var(--fs-secondary-heading);
+  line-height: 1.2;
+}
+
+.fs-teritary-heading {
+  font-size: var(--fs-teritary-heading);
+  line-height: 1.2;
 }
 
 @media only screen and (min-width: 50rem) {

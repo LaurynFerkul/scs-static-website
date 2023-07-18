@@ -1,11 +1,15 @@
 @use '../abstracts' as *;
 
 :root {
-    @each $color, $shades in $colors {
-        @each $shade, $value in $shades {
-            --clr-#{$color}-#{$shade}: #{$value};
-        }
-    }
+  @each $color, $shades in $colors {
+      @each $shade, $value in $shades {
+          --clr-#{$color}-#{$shade}: #{$value};
+      }
+  }
+
+  @each $property, $value in $font-weight {
+    --fw-#{$property}: #{$value};
+  }
 
   @each $screen-size, $property in $type-scale {
     @if $screen-size == small {
@@ -15,7 +19,8 @@
     } 
   }
 
-  @each $property, $value in $font-weight {
-    --fw-#{$property}: #{$value};
-  }
+  --fs-body: var(--fs-400);
+  --fs-primary-heading: var(--fs-800);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-teritary-heading: var(--fs-600);
 }
