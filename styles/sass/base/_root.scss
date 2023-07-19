@@ -28,4 +28,9 @@
   --fs-primary-heading: var(--fs-800);
   --fs-secondary-heading: var(--fs-700);
   --fs-teritary-heading: var(--fs-600);
+  --fs-button: var(--fs-400);
+
+  @each $property, $value in $sizes {
+    --size-#{$property}: #{$value};
+  }
 }

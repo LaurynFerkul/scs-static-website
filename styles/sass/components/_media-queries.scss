@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-@media only screen and (min-width: 50rem) {
+@media only screen and (min-width: 50em) {
     :root {
         @each $screen-size, $property in $type-scale {
             @if $screen-size == medium {
@@ -11,9 +11,15 @@
             }
         }
     }
+
+    /* utility classes */
+    .flex-container {
+        flex-direction: row;
+        gap: 2rem;
+    }
 }
 
-@media only screen and (min-width: 65rem) {
+@media only screen and (min-width: 65em) {
     :root {
         @each $screen-size, $property in $type-scale {
             @if $screen-size == large {
