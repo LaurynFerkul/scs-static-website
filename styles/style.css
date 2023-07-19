@@ -6,6 +6,9 @@
   --clr-accent-200: #A9CBEF;
   --clr-neutrals-100: #FFF7CC;
   --clr-neutrals-200: #FFFDF5;
+  --ff-family: "Outfit", sans-serif;
+  --ff-body: "Outfit", sans-serif;
+  --ff-heading: "Outfit", sans-serif;
   --fw-extra-light: 200;
   --fw-light: 300;
   --fw-regular: 400;
@@ -181,17 +184,14 @@ svg {
 
 .fs-primary-heading {
   font-size: var(--fs-primary-heading);
-  line-height: 1.2;
 }
 
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
-  line-height: 1.2;
 }
 
 .fs-teritary-heading {
   font-size: var(--fs-teritary-heading);
-  line-height: 1.2;
 }
 
 @media only screen and (min-width: 50rem) {

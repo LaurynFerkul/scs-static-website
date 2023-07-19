@@ -7,6 +7,11 @@
       }
   }
 
+  --ff-family: 'Outfit', sans-serif;
+
+  --ff-body: 'Outfit', sans-serif;
+  --ff-heading: 'Outfit', sans-serif;
+
   @each $property, $value in $font-weight {
     --fw-#{$property}: #{$value};
   }
