@@ -22,6 +22,7 @@
 .button:focus-visible {
     background-color: var(--clr-primary-300);
     color: var(--clr-neutral-200);
+    text-decoration: none;
 }
 
 .button[data-color="yellow"]:hover,

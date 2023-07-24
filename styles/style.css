@@ -292,6 +292,76 @@ body {
   padding-block: var(--size-900);
 }
 
+.primary-header {
+  margin: 10px;
+  padding-block: var(--size-300);
+  border-radius: var(--size-400);
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+
+.nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(var(--size-100), 1vw, var(--size-700));
+}
+.nav-list svg {
+  width: var(--fs-body);
+  fill: var(--clr-primary-300);
+}
+
+.nav-item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  gap: 0.5rem;
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  color: var(--clr-primary-300);
+  font-weight: var(--fw-regular);
+  padding: 0.5em 1em;
+  line-height: 1;
+  border: 0.13em solid transparent;
+  border-radius: 100vmax;
+}
+.nav-item:hover {
+  text-decoration: underline;
+}
+.nav-item:focus-visible {
+  border-color: var(--clr-primary-300);
+  outline: none;
+}
+
+[data-dropdown][data-visible] [data-dropdown-menu] {
+  display: block;
+}
+
+[data-dropdown-menu] {
+  display: none;
+}
+
 .button {
   cursor: pointer;
   text-decoration: none;
@@ -317,6 +387,7 @@ body {
 .button:focus-visible {
   background-color: var(--clr-primary-300);
   color: var(--clr-neutral-200);
+  text-decoration: none;
 }
 
 .button[data-color=yellow]:hover,
@@ -335,6 +406,11 @@ body {
   outline-color: var(--clr-primary-200);
 }
 
+@media only screen and (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+  }
+}
 @media only screen and (min-width: 50em) {
   :root {
     --fs-400: 1.06rem;
@@ -342,6 +418,11 @@ body {
     --fs-600: 1.53rem;
     --fs-700: 1.93rem;
     --fs-800: 2.6rem;
+  }
+  .nav-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   /* utility classes */
   .flex-container {
@@ -367,5 +448,10 @@ body {
     --fs-600: 1.75rem;
     --fs-700: 2.125rem;
     --fs-800: 3rem;
+  }
+  .nav-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
