@@ -16,6 +16,10 @@
     .flex-container {
         flex-direction: row;
         gap: 2rem;
+        justify-content: space-between;
+        &.center {
+            justify-content: center;
+        }
     }
 }
 
