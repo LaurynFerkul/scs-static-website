@@ -314,7 +314,19 @@ body {
 }
 
 .mobile-nav-toggle {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0.5em;
   display: none;
+}
+.mobile-nav-toggle div {
+  width: 2rem;
+  height: 0.25rem;
+  margin: 0.313rem 0;
+  border-radius: 1.25rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .nav-list {
@@ -328,10 +340,13 @@ body {
 }
 .nav-list svg {
   width: var(--fs-body);
+  height: var(--fs-body);
   fill: var(--clr-primary-300);
+  pointer-events: none;
 }
 
 .nav-item {
+  cursor: pointer;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -348,11 +363,13 @@ body {
   border-radius: 100vmax;
 }
 .nav-item:hover {
-  text-decoration: underline;
+  -webkit-text-decoration: underline 0.13rem;
+          text-decoration: underline 0.13rem;
 }
 .nav-item:focus-visible {
   border-color: var(--clr-primary-300);
-  text-decoration: underline;
+  -webkit-text-decoration: underline 0.13rem;
+          text-decoration: underline 0.13rem;
   outline: none;
 }
 
@@ -380,6 +397,20 @@ body {
   padding-inline: var(--size-100);
 }
 
+.active .line1 {
+  -webkit-transform: rotate(-45deg) translate(-0.438rem, 0.438rem);
+          transform: rotate(-45deg) translate(-0.438rem, 0.438rem);
+}
+
+.active .line2 {
+  opacity: 0;
+}
+
+.active .line3 {
+  -webkit-transform: rotate(45deg) translate(-0.313rem, -0.313rem);
+          transform: rotate(45deg) translate(-0.313rem, -0.313rem);
+}
+
 .button {
   cursor: pointer;
   text-decoration: none;
@@ -390,6 +421,7 @@ body {
   font-weight: var(--fw-regular);
   font-size: var(--fs-button);
   line-height: 1;
+  text-align: center;
   color: var(--clr-primary-300);
   background-color: transparent;
   -webkit-transition: background-color 0.05s ease, color 0.5s ease;
@@ -425,8 +457,35 @@ body {
 }
 
 @media only screen and (max-width: 50em) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+  .primary-header.active {
+    position: relative;
+  }
+  .primary-header.active .primary-navigation {
+    display: block;
+  }
   .primary-navigation {
     display: none;
+    position: absolute;
+    inset: calc(100% + var(--size-200)) 0 auto 0;
+    background-color: var(--clr-neutral-200);
+    border-radius: var(--size-400);
+  }
+  .nav-list:first-child {
+    display: grid;
+    margin: var(--size-200);
+  }
+  .nav-item {
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  [data-dropdown-menu] {
+    position: relative;
+    border-radius: 0 0 1rem 1rem;
   }
 }
 @media only screen and (min-width: 50em) {

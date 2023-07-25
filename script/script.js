@@ -1,12 +1,28 @@
 const scsWebsite = {};
 
+scsWebsite.navToggle = document.querySelector('.mobile-nav-toggle');
+scsWebsite.primaryNav = document.querySelector('.primary-navigation');
+scsWebsite.primaryHeader = document.querySelector('.primary-header');
+
 scsWebsite.init = function () {
+    scsWebsite.showMobileNav();
     scsWebsite.showDropdown();
 };
+
+scsWebsite.showMobileNav = () => {
+    scsWebsite.navToggle.addEventListener("click", () => {
+        scsWebsite.primaryNav.toggleAttribute("data-visible");
+        scsWebsite.primaryNav.hasAttribute('data-visible')
+            ? scsWebsite.navToggle.setAttribute("aria-expanded", true)
+            : scsWebsite.navToggle.setAttribute("aria-expanded", false);
+        scsWebsite.primaryHeader.classList.toggle("active");
+    })
+}
 
 scsWebsite.showDropdown = () => {
     document.addEventListener('click', e => {
         const isDropdownButton = e.target.matches('[data-dropdown-button]');
+        const isDropdownArrow = e.target.matches('#dropdown-arrow');
         const dropdownButton = e.target;
 
         if (!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
