@@ -280,12 +280,61 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-container[data-reverse=column] {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
 .flex-container.center {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.flex-container .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  max-width: 25rem;
+  border-radius: 100vmax;
+}
+
+.flow * + * {
+  margin-top: var(--flow-spacer, 1em);
+}
+
+.shadow {
+  border-radius: 100vmax;
+  max-width: calc(100% - 2rem);
+}
+.shadow[data-shadow=right] {
+  -webkit-box-shadow: 2rem 0;
+          box-shadow: 2rem 0;
+}
+.shadow[data-shadow=left] {
+  -webkit-box-shadow: -2rem 0;
+          box-shadow: -2rem 0;
+}
+.shadow[data-shadow-clr=yellow] {
+  color: var(--clr-accent-100);
+}
+.shadow[data-shadow-clr=blue] {
+  color: var(--clr-accent-200);
+}
+
+.rounded {
+  border-radius: 100vmax;
 }
 
 .padding-block-900 {
@@ -496,6 +545,13 @@ body {
     --fs-700: 1.93rem;
     --fs-800: 2.6rem;
   }
+  /* Base Styles */
+  h1 {
+    max-width: 16ch;
+  }
+  p:not([class]) {
+    max-width: 42ch;
+  }
   .nav-wrapper {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -507,10 +563,26 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    gap: 2rem;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .flex-container[data-reverse=column] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .flex-container[data-reverse=row] {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .flex-container[data-reverse=row] .img-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
   .flex-container.center {
     -webkit-box-pack: center;

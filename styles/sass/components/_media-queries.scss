@@ -49,6 +49,15 @@
         }
     }
 
+    /* Base Styles */
+    h1{
+        max-width: 16ch;
+    }
+
+    p:not([class]) {
+        max-width: 42ch;
+    }
+
     .nav-wrapper {
         justify-content: center;
     }
@@ -56,8 +65,16 @@
     /* utility classes */
     .flex-container {
         flex-direction: row;
-        gap: 2rem;
-        justify-content: space-between;
+        justify-content: space-evenly;
+        &[data-reverse="column"] {
+                flex-direction: row;
+            }
+        &[data-reverse="row"] {
+            flex-direction: row-reverse;
+            .img-container {
+                justify-content: flex-start;
+            }
+        }
         &.center {
             justify-content: center;
         }
