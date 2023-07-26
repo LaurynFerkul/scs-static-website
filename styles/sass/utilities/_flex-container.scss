@@ -10,10 +10,16 @@
     &.center {
             align-items: center;
         }
+    &[data-reverse="row"] {
+        .img-container {
+            justify-content: flex-start;
+        }
+    }
     .img-container {
         display: flex;
         justify-content: flex-end;
         max-width: 25rem;
         border-radius: 100vmax;
+        
     }
 }
