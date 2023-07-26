@@ -1,0 +1,10 @@
+.wave {
+    position: absolute;
+    bottom: -5rem;
+    height: 5rem;
+    width: 100%;
+    z-index: 1;
+    &[data-wave-header] {
+        bottom: 0;
+    }
+}

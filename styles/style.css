@@ -116,6 +116,10 @@ body {
   background-position: center;
 }
 
+section {
+  position: relative;
+}
+
 .hero .img-container {
   border: 0.3em solid var(--clr-primary-200);
   position: relative;
@@ -358,12 +362,31 @@ body {
   color: var(--clr-accent-200);
 }
 
+.wave {
+  position: absolute;
+  bottom: -5rem;
+  height: 5rem;
+  width: 100%;
+  z-index: 1;
+}
+.wave[data-wave-header] {
+  bottom: 0;
+}
+
 .rounded {
   border-radius: 100vmax;
 }
 
-.padding-block-900 {
-  padding-block: var(--size-900);
+.padding-block-700 {
+  padding-block: var(--size-700);
+}
+
+.padding-block-large-top {
+  padding-block: calc(var(--size-700) + 4rem) var(--size-700);
+}
+
+.padding-block-large-bottom {
+  padding-block: var(--size-700) calc(var(--size-700) + 4rem);
 }
 
 .primary-header {
