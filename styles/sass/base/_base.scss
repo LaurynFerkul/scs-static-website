@@ -3,5 +3,8 @@ body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
     font-weight: var(--fw-light);
-    color: var(--clr-primary-300)
+    color: var(--clr-primary-300);
+    background-image: url(../assets/sunBackground.svg);
+    background-size: 18rem;
+    background-position: center;
 }

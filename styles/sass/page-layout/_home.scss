@@ -1,0 +1,25 @@
+.hero {
+    .img-container {
+        border: 0.3em solid var(--clr-primary-200);
+        position: relative;
+    }
+    .text-container{
+        img {
+            width: var(--fs-primary-heading);
+        }
+    }
+    [data-highlight] {
+        text-transform: uppercase;
+        color: var(--clr-primary-200);
+        display: inline-block;
+        img {
+            display: inherit;
+        }
+    }
+}
+
+.sun-decoration {
+    position: absolute;
+    inset: auto 0 0 auto;
+    max-width: 8rem;
+}

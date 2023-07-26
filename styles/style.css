@@ -111,6 +111,31 @@ body {
   font-family: var(--ff-body);
   font-weight: var(--fw-light);
   color: var(--clr-primary-300);
+  background-image: url(../assets/sunBackground.svg);
+  background-size: 18rem;
+  background-position: center;
+}
+
+.hero .img-container {
+  border: 0.3em solid var(--clr-primary-200);
+  position: relative;
+}
+.hero .text-container img {
+  width: var(--fs-primary-heading);
+}
+.hero [data-highlight] {
+  text-transform: uppercase;
+  color: var(--clr-primary-200);
+  display: inline-block;
+}
+.hero [data-highlight] img {
+  display: inherit;
+}
+
+.sun-decoration {
+  position: absolute;
+  inset: auto 0 0 auto;
+  max-width: 8rem;
 }
 
 .visually-hidden {
@@ -517,6 +542,7 @@ body {
   }
   .primary-navigation {
     display: none;
+    z-index: 1;
     position: absolute;
     inset: calc(100% + var(--size-200)) 0 auto 0;
     background-color: var(--clr-neutral-200);
@@ -547,7 +573,7 @@ body {
   }
   /* Base Styles */
   h1 {
-    max-width: 16ch;
+    max-width: 18ch;
   }
   p:not([class]) {
     max-width: 42ch;
@@ -590,7 +616,7 @@ body {
             justify-content: center;
   }
 }
-@media only screen and (min-width: 65em) {
+@media only screen and (min-width: 62em) {
   :root {
     --fs-400: 1.12rem;
     --fs-500: 1.25rem;
