@@ -67,6 +67,32 @@
         max-width: 8rem;
     }
 
+    .half-sun-decal::before,
+    .half-sun-decal::after {
+        position: absolute;
+        content: "";
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 8rem;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .half-sun-decal::before {
+        background-image: url(../assets/leftHalfSun.svg);
+        background-position: left top;
+        top: 1rem;
+        left: 0;
+    }
+
+
+    .half-sun-decal::after {
+        background-image: url(../assets/rightHalfSun.svg);
+        background-position: right bottom;
+        bottom: -4rem;
+        right: 0;
+    }
+
     /* utility classes */
     .flex-container {
         flex-direction: row;
@@ -100,5 +126,10 @@
 
     .nav-wrapper {
         justify-content: space-between;
+    }
+
+    .half-sun-decal::before,
+    .half-sun-decal::after {
+        height: 10rem;
     }
 }
