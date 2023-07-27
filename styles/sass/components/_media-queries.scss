@@ -67,6 +67,32 @@
         max-width: 8rem;
     }
 
+    .mission {
+        img {
+            max-width: 15rem;
+        }
+        .line-decal {
+            position: relative;
+            display: inline;
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                width: 7rem;
+                height: 0.13rem;
+                background-color: var(--clr-primary-300);
+                display: block;
+                top: var(--fs-400);
+            }
+            &::before {
+                left: -8rem;
+            }
+            &::after {
+                right: -8rem;
+            }
+        }
+    }
+
     .half-sun-decal::before,
     .half-sun-decal::after {
         position: absolute;
@@ -81,7 +107,7 @@
     .half-sun-decal::before {
         background-image: url(../assets/leftHalfSun.svg);
         background-position: left top;
-        top: 1rem;
+        top: 0;
         left: 0;
     }
 

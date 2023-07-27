@@ -23,3 +23,13 @@
     inset: auto 0 0 auto;
     max-width: 6rem;
 }
+
+.mission {
+    img {
+        max-width: 10rem;
+    }
+    span {
+        display: block;
+        text-transform: capitalize;
+    }
+}
