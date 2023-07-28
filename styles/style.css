@@ -299,7 +299,7 @@ section {
 }
 
 .center {
-  margin: auto;
+  margin-inline: auto;
 }
 
 .container {
@@ -318,9 +318,6 @@ section {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -352,7 +349,7 @@ section {
   border-radius: 100vmax;
 }
 
-.flow * + * {
+.flow > * + * {
   margin-top: var(--flow-spacer, 1em);
 }
 
@@ -521,6 +518,105 @@ section {
           transform: rotate(45deg) translate(-0.313rem, -0.313rem);
 }
 
+.primary-footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.form-social-donate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.social-donate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.subscribe-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.copyright-charity-number {
+  border-top: 0.13em solid var(--clr-neutral-200);
+  padding-top: 1rem;
+}
+.copyright-charity-number p {
+  margin-inline: auto;
+}
+
+input {
+  border-radius: 100vmax;
+  border: 0;
+  padding: var(--size-100) var(--size-400);
+  background-color: var(--clr-neutral-200);
+}
+input:focus {
+  outline: 0.13rem solid var(--clr-primary-200);
+  outline-offset: 0.2rem;
+  background-color: var(--clr-neutral-100);
+}
+
+.social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: var(--size-300);
+}
+.social-list a {
+  padding: var(--size-200);
+}
+.social-list a:hover .social-icon {
+  fill: var(--clr-primary-300);
+}
+.social-list a:focus .social-icon {
+  fill: var(--clr-primary-300);
+}
+
+.social-icon {
+  width: var(--size-500);
+  aspect-ratio: 1;
+  fill: var(--clr-neutral-200);
+}
+
 .button {
   cursor: pointer;
   text-decoration: none;
@@ -666,6 +762,24 @@ section {
     bottom: -4rem;
     right: 0;
   }
+  .primary-footer-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .form-social-donate {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   /* utility classes */
   .flex-container {
     -webkit-box-orient: horizontal;
@@ -715,5 +829,11 @@ section {
   .half-sun-decal::before,
   .half-sun-decal::after {
     height: 10rem;
+  }
+  .social-donate {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }

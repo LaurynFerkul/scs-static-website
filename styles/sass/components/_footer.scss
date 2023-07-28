@@ -1,0 +1,36 @@
+.primary-footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    // border-bottom: solid red;
+}
+
+.form-social-donate {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.social-donate {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.copyright-charity-number {
+    border-top: 0.13em solid var(--clr-neutral-200);
+    padding-top: 1rem;
+    p {
+        margin-inline: auto;
+    }
+}

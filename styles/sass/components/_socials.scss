@@ -1,0 +1,24 @@
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: var(--size-300);
+    a {
+        padding: var(--size-200);
+        &:hover {
+            .social-icon {
+                fill: var(--clr-primary-300);
+            }
+        }
+        &:focus{
+            .social-icon {
+                fill: var(--clr-primary-300);
+            }
+        }
+    }
+}
+
+.social-icon {
+    width: var(--size-500);
+    aspect-ratio: 1;
+    fill: var(--clr-neutral-200);
+}

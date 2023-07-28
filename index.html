@@ -234,42 +234,66 @@
         </section>
     </main>
 
-    <footer class="text-neutral-200">
+    <footer class="primary-footer | text-neutral-200 padding-block-large-top text-center">
         <div class="container">
-            <div class="flex-container">
+            <div class="primary-footer-wrapper">
                 <div>
-                    <a href="#"><img src="./assets/whiteSunshineLogo.svg" alt="Sunshine Centres for Seniors"></a>
+                    <a href="#" class="sunshinelogo"><img src="./assets/whiteSunshineLogo.svg" alt="Sunshine Centres for Seniors"></a>
                 </div>
-                <div>
-                    <h2 class="fs-600 fw-bold">Sign up for our newsletter</h2>
-                    <form action="">
-                        <input type="email">
-                        <button class="button" data-color="yellow">Sign Up</button>
-                    </form>
-                </div>
-                <div>
-                    <h2 class="fs-600 fw-bold">Stay Connected</h2>
-                    <ul role="list" aria-label="Social links">
-                        <li>
-                            <a  aria-label="facebook" href="https://www.facebook.com/SunshineCentresforSeniors/"><i clrss="fa-brands fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="instagram" href="https://www.instagram.com/sunshinecentres/?hl=en"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="twitter" href="https://twitter.com/scstoronto?lang=en"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a aria-label="youtube" href="https://www.youtube.com/@sunshinecentresforseniors9867"><i class="fa-brands fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="fs-600 fw-bold">Support Us</h2>
-                    <a href="./assets/donate.html" class="button" data-color="yellow">Donate</a>
+                <div class="form-social-donate">
+                    <div class="flow">
+                        <h2 class="fs-600 fw-bold">Sign up for our newsletter</h2>
+                        <form class="subscribe-form" action="">
+                            <label class="visually-hidden" for="name">Name</label>
+                            <input type="text" id="name" placeholder="Name">
+
+                            <label class="visually-hidden" for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email">
+                            <button class="button" data-color="yellow">Sign Up</button>
+                        </form>
+                    </div>
+                    <div class="social-donate">
+                        <div class="flow">
+                            <h2 class="fs-600 fw-bold">Stay Connected</h2>
+                            <ul class="social-list" role="list" aria-label="Social links">
+                                <li>
+                                    <a class="button" data-color="yellow"  aria-label="facebook" href="https://www.facebook.com/SunshineCentresforSeniors/">
+                                        <svg class="social-icon">
+                                            <use xlink:href="./assets/socialIcons.svg#iconFacebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="button" data-color="yellow" aria-label="instagram" href="https://www.instagram.com/sunshinecentres/?hl=en">
+                                        <svg class="social-icon">
+                                            <use xlink:href="./assets/socialIcons.svg#iconInstagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="button" data-color="yellow" aria-label="twitter" href="https://twitter.com/scstoronto?lang=en">
+                                        <svg class="social-icon">
+                                            <use xlink:href="./assets/socialIcons.svg#iconTwitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="button" data-color="yellow" aria-label="youtube" href="https://www.youtube.com/@sunshinecentresforseniors9867">
+                                        <svg class="social-icon">
+                                            <use xlink:href="./assets/socialIcons.svg#iconYoutube"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="flow">
+                            <h2 class="fs-600 fw-bold">Support Us</h2>
+                            <a href="./assets/donate.html" class="button" data-color="yellow">Donate</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="text-center">
+            <div class=" copyright-charity-number">
                 <p>2023 Sunshine Centres for Seniors</p>
                 <p>Charitable Registration Number: 11920 5268 RR 000</p>
             </div>
