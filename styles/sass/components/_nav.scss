@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     gap: clamp(var(--size-100), 1vw, var(--size-700));
+    z-index: 999;
     svg {
         width: var(--fs-body);
         height: var(--fs-body);

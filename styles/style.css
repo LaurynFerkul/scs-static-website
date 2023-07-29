@@ -447,6 +447,7 @@ p strong {
       -ms-flex-align: center;
           align-items: center;
   gap: clamp(var(--size-100), 1vw, var(--size-700));
+  z-index: 999;
 }
 .nav-list svg {
   width: var(--fs-body);
@@ -712,7 +713,7 @@ input:focus {
   }
   .primary-navigation {
     display: none;
-    z-index: 1;
+    z-index: 999;
     position: absolute;
     inset: calc(100% + var(--size-200)) 0 auto 0;
     background-color: var(--clr-neutral-200);
