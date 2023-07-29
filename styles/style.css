@@ -721,14 +721,13 @@ input:focus {
   color: var(--clr-primary-300);
   text-decoration: none;
   border-radius: 100vmax;
+  font-weight: var(--fw-regular);
 }
 .inline-link:hover {
   text-decoration: underline;
-  font-weight: var(--fw-regular);
 }
 .inline-link:focus {
   text-decoration: underline;
-  font-weight: var(--fw-regular);
   outline: 0.13rem solid var(--clr-primary-300);
   outline-offset: 0.2rem;
 }
@@ -752,6 +751,9 @@ input:focus {
 }
 .card .card-text {
   max-width: 27ch;
+}
+.card .card-text[data-width=large] {
+  max-width: 35ch;
 }
 
 @media only screen and (max-width: 50em) {

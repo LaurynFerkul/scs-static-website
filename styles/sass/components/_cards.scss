@@ -13,5 +13,8 @@
     }
     .card-text {
         max-width: 27ch;
+        &[data-width="large"] {
+            max-width: 35ch;
+        }
     }
 }
