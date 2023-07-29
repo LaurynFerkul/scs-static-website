@@ -5,6 +5,8 @@ scsWebsite.primaryNav = document.querySelector('.primary-navigation');
 scsWebsite.primaryHeader = document.querySelector('.primary-header');
 
 scsWebsite.navLinks = document.querySelectorAll('.nav-item');
+scsWebsite.navLogo = document.querySelector('.nav-logo');
+scsWebsite.footerLogo = document.querySelector('.footer-logo');
 
 scsWebsite.init = function () {
     scsWebsite.showMobileNav();
@@ -55,6 +57,15 @@ scsWebsite.currentPage = () => {
             link.setAttribute('href', '#');
         }
     })
+
+    if (scsWebsite.navLogo.href === window.location.href) {
+        scsWebsite.navLogo.setAttribute('aria-current', 'page');
+        scsWebsite.navLogo.setAttribute('href', '#');
+    }
+    if (scsWebsite.footerLogo.href === window.location.href) {
+        scsWebsite.footerLogo.setAttribute('aria-current', 'page');
+        scsWebsite.footerLogo.setAttribute('href', '#nav-logo');
+    }
 }
 
 scsWebsite.init();
