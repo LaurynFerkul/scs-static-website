@@ -390,6 +390,10 @@ p strong {
   border-radius: 100vmax;
 }
 
+.position-relative {
+  position: relative;
+}
+
 .padding-block-700 {
   padding-block: var(--size-700);
 }
