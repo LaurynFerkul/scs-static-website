@@ -1,0 +1,22 @@
+.contact-form-wrapper {
+    border: 0.13rem solid var(--clr-primary-300);
+    border-radius: var(--size-400);
+    padding-block: 1rem;
+}
+
+.contact-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contact-detail {
+    max-width: 20ch;
+    svg {
+        max-width: 3rem;
+        aspect-ratio: 1;
+        margin-inline: auto;
+        fill: var(--clr-primary-300);
+    }
+}

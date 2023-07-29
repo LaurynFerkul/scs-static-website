@@ -1,0 +1,15 @@
+.inline-link {
+    color: var(--clr-primary-300);
+    text-decoration: none;
+    border-radius: 100vmax;
+    &:hover {
+        text-decoration: underline;
+        font-weight: var(--fw-regular);
+    }
+    &:focus {
+        text-decoration: underline;
+        font-weight: var(--fw-regular);
+        outline: 0.13rem solid var(--clr-primary-300);
+        outline-offset: 0.2rem;
+    }
+}

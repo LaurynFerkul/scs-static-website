@@ -127,6 +127,10 @@ p strong {
   font-weight: var(--fw-medium);
 }
 
+a {
+  display: inline-block;
+}
+
 .hero .img-container {
   border: 0.3em solid var(--clr-primary-200);
   position: relative;
@@ -155,6 +159,34 @@ p strong {
 .mission span {
   display: block;
   text-transform: capitalize;
+}
+
+.contact-form-wrapper {
+  border: 0.13rem solid var(--clr-primary-300);
+  border-radius: var(--size-400);
+  padding-block: 1rem;
+}
+
+.contact-detail-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.contact-detail {
+  max-width: 20ch;
+}
+.contact-detail svg {
+  max-width: 3rem;
+  aspect-ratio: 1;
+  margin-inline: auto;
+  fill: var(--clr-primary-300);
 }
 
 .visually-hidden {
@@ -685,6 +717,22 @@ input:focus {
   outline-color: var(--clr-primary-200);
 }
 
+.inline-link {
+  color: var(--clr-primary-300);
+  text-decoration: none;
+  border-radius: 100vmax;
+}
+.inline-link:hover {
+  text-decoration: underline;
+  font-weight: var(--fw-regular);
+}
+.inline-link:focus {
+  text-decoration: underline;
+  font-weight: var(--fw-regular);
+  outline: 0.13rem solid var(--clr-primary-300);
+  outline-offset: 0.2rem;
+}
+
 .card-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -700,6 +748,7 @@ input:focus {
 .card img, .card svg {
   max-width: 7rem;
   aspect-ratio: 1;
+  margin-inline: auto;
 }
 .card .card-text {
   max-width: 27ch;
