@@ -61,6 +61,17 @@
         text-decoration: underline 0.13rem;
         outline: none;
     }
+    &[aria-current="page"] {
+        font-weight: var(--fw-semi-bold);
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus-visible {
+            border-color: var(--clr-primary-300);
+            text-decoration: none;
+            outline: none;
+        }
+    }
 }
 
 [data-dropdown] {

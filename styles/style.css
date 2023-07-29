@@ -109,7 +109,7 @@ svg {
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
-  font-weight: var(--fw-light);
+  font-weight: var(--fw-extra-light);
   color: var(--clr-primary-300);
   background-image: url(../assets/sunBackground.svg);
   background-size: 18rem;
@@ -118,6 +118,13 @@ body {
 
 section {
   position: relative;
+}
+
+p {
+  max-width: 70ch;
+}
+p strong {
+  font-weight: var(--fw-medium);
 }
 
 .hero .img-container {
@@ -356,17 +363,13 @@ section {
 .shadow {
   border-radius: 100vmax;
   max-width: calc(100% - 2rem);
-}
-.shadow[data-shadow=right] {
-  -webkit-box-shadow: 2rem 0;
-          box-shadow: 2rem 0;
-}
-.shadow[data-shadow=left] {
+  color: var(--clr-accent-100);
   -webkit-box-shadow: -2rem 0;
           box-shadow: -2rem 0;
 }
-.shadow[data-shadow-clr=yellow] {
-  color: var(--clr-accent-100);
+.shadow[data-shadow-side=right] {
+  -webkit-box-shadow: 2rem 0;
+          box-shadow: 2rem 0;
 }
 .shadow[data-shadow-clr=blue] {
   color: var(--clr-accent-200);
@@ -479,6 +482,17 @@ section {
           text-decoration: underline 0.13rem;
   outline: none;
 }
+.nav-item[aria-current=page] {
+  font-weight: var(--fw-semi-bold);
+}
+.nav-item[aria-current=page]:hover {
+  text-decoration: none;
+}
+.nav-item[aria-current=page]:focus-visible {
+  border-color: var(--clr-primary-300);
+  text-decoration: none;
+  outline: none;
+}
 
 [data-dropdown][data-visible] [data-dropdown-button] {
   color: var(--clr-neutral-200);
@@ -580,6 +594,10 @@ section {
   margin-inline: auto;
 }
 
+.sub-header-img {
+  max-width: 10rem;
+}
+
 input {
   border-radius: 100vmax;
   border: 0;
@@ -660,6 +678,26 @@ input:focus {
 
 .button[data-color=yellow]:focus-visible {
   outline-color: var(--clr-primary-200);
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+}
+
+.card img, .card svg {
+  max-width: 7rem;
+  aspect-ratio: 1;
+}
+.card .card-text {
+  max-width: 27ch;
 }
 
 @media only screen and (max-width: 50em) {

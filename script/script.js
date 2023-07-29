@@ -4,9 +4,12 @@ scsWebsite.navToggle = document.querySelector('.mobile-nav-toggle');
 scsWebsite.primaryNav = document.querySelector('.primary-navigation');
 scsWebsite.primaryHeader = document.querySelector('.primary-header');
 
+scsWebsite.navLinks = document.querySelectorAll('.nav-item');
+
 scsWebsite.init = function () {
     scsWebsite.showMobileNav();
     scsWebsite.showDropdown();
+    scsWebsite.currentPage();
 };
 
 scsWebsite.showMobileNav = () => {
@@ -42,6 +45,14 @@ scsWebsite.showDropdown = () => {
             dropdown.querySelector("[aria-expanded='true']").setAttribute("aria-expanded", false);
             dropdown.removeAttribute("data-visible");
         });
+    })
+}
+
+scsWebsite.currentPage = () => {
+    scsWebsite.navLinks.forEach((link)=> {
+        if(link.href === window.location.href) {
+            link.setAttribute('aria-current', 'page')
+        }
     })
 }
 

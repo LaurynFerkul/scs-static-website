@@ -2,7 +2,7 @@
 body {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
-    font-weight: var(--fw-light);
+    font-weight: var(--fw-extra-light);
     color: var(--clr-primary-300);
     background-image: url(../assets/sunBackground.svg);
     background-size: 18rem;
@@ -11,4 +11,11 @@ body {
 
 section {
     position: relative;
+}
+
+p {
+    max-width: 70ch;
+    strong {
+        font-weight: var(--fw-medium);
+    }
 }

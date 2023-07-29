@@ -1,15 +1,17 @@
 .shadow {
     border-radius: 100vmax;
     max-width: calc(100% - 2rem);
-    &[data-shadow="right"] {
+    color: var(--clr-accent-100);
+    box-shadow: -2rem 0;
+    &[data-shadow-side="right"] {
         box-shadow: 2rem 0;
     }
-    &[data-shadow="left"] {
-        box-shadow: -2rem 0;
-    }
-    &[data-shadow-clr="yellow"] {
-        color: var(--clr-accent-100);
-    }
+    // &[data-shadow="left"] {
+    //     box-shadow: -2rem 0;
+    // }
+    // &[data-shadow-clr="yellow"] {
+    //     color: var(--clr-accent-100);
+    // }
     &[data-shadow-clr="blue"] {
         color: var(--clr-accent-200);
     }

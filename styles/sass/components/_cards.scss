@@ -1,0 +1,16 @@
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    img, svg {
+        max-width: 7rem;
+        aspect-ratio: 1;
+    }
+    .card-text {
+        max-width: 27ch;
+    }
+}
