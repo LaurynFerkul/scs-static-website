@@ -51,7 +51,8 @@ scsWebsite.showDropdown = () => {
 scsWebsite.currentPage = () => {
     scsWebsite.navLinks.forEach((link)=> {
         if(link.href === window.location.href) {
-            link.setAttribute('aria-current', 'page')
+            link.setAttribute('aria-current', 'page');
+            link.setAttribute('href', '#');
         }
     })
 }
