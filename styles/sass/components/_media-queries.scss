@@ -133,6 +133,13 @@
         flex-direction: row;
     }
 
+    .copyright-charity-number {
+        display: flex;
+        justify-content: space-between;
+        p {
+            margin-inline: 0;
+        }
+    }
     /* utility classes */
     .flex-container {
         flex-direction: row;

@@ -950,6 +950,17 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+  .copyright-charity-number {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .copyright-charity-number p {
+    margin-inline: 0;
+  }
   /* utility classes */
   .flex-container {
     -webkit-box-orient: horizontal;
